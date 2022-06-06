@@ -1,0 +1,15 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: darkslategrey;
+}
+
+.event {
+    position: absolute;
+    border: 1px solid;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

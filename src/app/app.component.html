@@ -1,0 +1,7 @@
+<div class="container">
+    <div *ngFor="let event of displayArray"
+        [ngStyle]="{'height': (100 / 12) * (event.duration/60) + 'vh', 'width': event.width + 'vw', top: (this.parseStartTime(event.start) -540) * 0.1388888888888888+ 'vh', left: event.width * event.index + 'vw'}"
+        class="event">
+        {{event.id}} - {{event.start}} à {{parseEndTime(event.start, event.duration)}}
+    </div>
+</div>
